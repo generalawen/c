@@ -5,10 +5,10 @@
 */
 #include<stdio.h>
 #include<stdlib.h>
-#define MAXSIZE 10
+#define MAXSIZE 100
 //顺序栈的定义
 typedef struct {
-	char data[MAXSIZE];
+	int data[MAXSIZE];
 	int top;
 	//int top1;
 }SqStack;
@@ -24,21 +24,21 @@ bool StackEmpty(SqStack s){
 		return false;
 }
 //插入元素x
-bool Push(SqStack &S,char x){
+bool Push(SqStack &S,int x){
 	if(S.top==MAXSIZE)
 		return false;
 	S.data[S.top++]=x;
 	return true;
 }
 //删除元素,并用x接受
-bool Pop(SqStack &S,char &x){
+bool Pop(SqStack &S,int &x){
 	if(S.top==0)
 		return false;
 	x=S.data[--S.top];
 	return true;
 }
 //读栈顶元素
-bool GetTop(SqStack S,char &x){
+bool GetTop(SqStack S,int &x){
 	if(S.top==0)
 		return false;
 	x=S.data[--S.top];

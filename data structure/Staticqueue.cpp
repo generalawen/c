@@ -16,6 +16,11 @@ void InitSqQueue(SqQueue &L){
 	L.front = L.rear = 0;
 	L.size = 0;
 }
+bool IsEmpty(SqQueue L){
+	if(L.size==0)
+		return true;
+	return false;
+}
 //≤Â»Î‘™Àÿ
 bool EnQueue(SqQueue &L,char x){
 	if(L.size==MAXSIZE)
