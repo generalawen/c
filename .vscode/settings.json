@@ -4,6 +4,13 @@
         "*.json": "json",
         "*.tcc": "cpp",
         "exception": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "random": "cpp",
+        "algorithm": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "regex": "cpp",
+        "utility": "cpp"
     }
 }

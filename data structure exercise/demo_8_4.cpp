@@ -14,8 +14,7 @@ int Partition(int a[],int low,int high){
         }
         Swap(a[i],a[low]);
         return i;
-    }
-    
+    }  
 }
 //5题
 int min_erem(int a[],int low,int high,int k){
